@@ -2,6 +2,8 @@
 
 Implementation-of-Half-Adder-and-Half Subtractor-circuit
 
+**DATE:18/10/2024**
+
 **AIM:**
 
 To design a half adder and half subtractor circuit and verify its truth table in Quartus using Verilog programming.
@@ -22,6 +24,9 @@ Sum = A’B+AB’ =A ⊕ B Carry = AB
 
 Figure -01 HALF ADDER
 
+![image](https://github.com/user-attachments/assets/3198341b-f03b-4951-ba04-ebc871ed22cb)
+
+
 **Half Subtractor**
 
 The half-subtractor is a combinational circuit which is used to perform subtraction of two bits. It has two inputs, X (minuend) and Y (subtrahend) and two outputs D (difference) and B (borrow). To perform x - y, we have to check the relative magnitudes of x and y. If x ;;, y, we have three possibilities: 0 - 0 = 0, 1 - 0 = 1, and 1 - I = 0. The result is called the difference bit. If x < y, we have 0 - I, and it is necessary to borrow a 1 from the next higher stage. The I borrowed from the next higher stage adds 2 to the minuend bit, just as in the decimal system a borrow adds 10 to a minuend digit. With the minuend equal to 2, the difference becomes 2 - I = 1. The half-subtractor needs two outputs. One output generates the difference and will be designated by the symbol D. The second output, designated B for borrow, generates the binary signal that informs the next stage that a I has been borrowed. 
@@ -33,15 +38,8 @@ Borrow = A’B
 
 Figure -02 HALF Subtractor
 
-**Truthtable**
+![image](https://github.com/user-attachments/assets/68520184-beb6-42d3-84d6-eae62731235a)
 
-**Half Adder**
-
-![image](https://github.com/user-attachments/assets/c9773e38-15ca-42ab-aa8d-1cbc10a00a56)
-
-**Half Subtractor**
-
-![image](https://github.com/user-attachments/assets/dffebde5-88a5-40e8-8709-f9e57782fa7f)
 
 **Procedure**
 
@@ -60,9 +58,9 @@ Figure -02 HALF Subtractor
 
  Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 
-Developed by: DANIYEL ANTONY RAJ SD
+Developed by: Daniyel Antony Raj SD
 
-RegisterNumber: 24002985
+RegisterNumber:  212224220018
 
 **Half Adder**
 ```
@@ -82,7 +80,7 @@ assign difference= (a ^ b);
 assign borrow= ( ~a & b);
 endmodule
 ```
-**RTL Schematic**
+**RTL DIAGRAM**
 
 **Half Adder**
 
@@ -92,7 +90,7 @@ endmodule
 
 ![image](https://github.com/user-attachments/assets/2c4945b5-eadf-442c-b75b-22b2375d334d)
 
-**Output/TIMING Waveform**
+**TIMING Waveform**
 
 **Half Adder**
 
